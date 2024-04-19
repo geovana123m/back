@@ -1,0 +1,11 @@
+void main(){
+  isAuthorized('geo', idade: 17);
+}
+void isAuthorized(String name, {int? idade}){
+  List<String> auth = ['geo', 'claudia', 'gabriela'];
+  if (auth.contains(name) && idade! >= 18){
+   print('autorizado');
+ }else {
+   print('nao autorizado');
+}
+}
