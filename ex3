@@ -1,0 +1,13 @@
+void main() {
+cadastrarUsuario('geo', 'messias');
+}
+void cadastrarUsuario(String? name, String? sobrenome){
+  if (name != null){
+    print(name);
+} 
+  if (sobrenome != null){
+    print (sobrenome);
+  }
+  String nomeCompleto = sobrenome ?? 'usuario desconhecido';
+  print(nomeCompleto);
+}
